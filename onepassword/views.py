@@ -40,8 +40,12 @@ def howitworks(request):
     return render(request,'navbar/howitworks.html')
 
 def page_not_found(request,exception):
-    return render(request,"error/404.html")
+    response = render(request,"error/404.html")
+    response.status_code = 404
+    return response
 
 
 def internal_error(request):
-    return render(request,"error/500.html")
+    response = render(request,"error/500.html")
+    response.status_code = 500
+    return response
