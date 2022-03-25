@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',onepasswordviews.main,name='onepassword'),
     path('howitworks/',onepasswordviews.howitworks,name='howitworks'),
-    path('sitemap.xml'),
+    
     path("robots.txt",TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
 ]
 handler404 = onepasswordviews.page_not_found
