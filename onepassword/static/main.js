@@ -8,4 +8,3 @@ setTimeout(function(){
  function fun(){  
     document.getElementById("onepassword").reset();  
   }   
-  
