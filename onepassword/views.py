@@ -38,3 +38,10 @@ def main(request):
 
 def howitworks(request):
     return render(request,'navbar/howitworks.html')
+
+def page_not_found(request,exception):
+    return render(request,"error/404.html")
+
+
+def internal_error(request):
+    return render(request,"error/500.html")

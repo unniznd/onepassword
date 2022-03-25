@@ -8,3 +8,5 @@ urlpatterns = [
     path('',onepasswordviews.main,name='onepassword'),
     path('howitworks/',onepasswordviews.howitworks,name='howitworks')
 ]
+handler404 = onepasswordviews.page_not_found
+handler500 = onepasswordviews.internal_error
